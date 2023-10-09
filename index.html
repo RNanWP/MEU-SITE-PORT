@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portifólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Renan Oliveira</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#sobre">Experiencia</a></li>
+                <li><a href="#sobre">Projetos</a></li>
+                <li><a href="#sobre">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Renan Oliveira</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#sobre" onclick="toggleMenu()">Sobre</a></li>
+                <li><a href="#sobre" onclick="toggleMenu()">Experiencia</a></li>
+                <li><a href="#sobre" onclick="toggleMenu()">Projetos</a></li>
+                <li><a href="#sobre" onclick="toggleMenu()">Contato</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="perfil">
+        <div class="section_pic-container">
+            <img src="./assets/profile-pic.png" alt="Renan Foto">
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">Olá, eu sou</p>
+            <h1 class="titulo">Renan Oliveira</h1>
+            <p class="section_text_p2">Student: I.T Full Stack </p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Profissional Currículo-com-LINK.pdf')">
+                 Download CV
+        
+                <button class="btn btn-color-1" onclick="location.href='./#contato'">
+                Contato Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="Meu perfil do linkedin" class="icon" onclick="location.href='//www.linkedin.com/in/renanodev/'">
+                
+                <img src="./assets/github.png" alt="Meu perfil do github" class="icon" onclick="location.href='//WWW.github.com/RNanWP'">
+            </div>
+        </div>
+    </section>
+    <section id="Sobre"></section>
+    <script src="script.js"></script>
+</body>
+</html>
