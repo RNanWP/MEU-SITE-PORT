@@ -21,8 +21,7 @@ p{
 
 /* TRANSAÃO*/
 
-a,
-.btn{
+a, .btn{
     transition: all 300ms ease;
 }
 
@@ -212,7 +211,7 @@ section {
     height: 2rem;
 }
 
-/* BUTOES */
+/* BOTOES */
 
 .btn-container{
     display: flex;
@@ -258,4 +257,57 @@ section {
 
 .btn-container{
     gap: 1rem;
+}
+
+/* SECTION SOBRE */
+
+#sobre{
+    position: relative;
+}
+
+.sobre-containers{
+    gap: 2rem;    
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.detalhes-sobre-container{
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sobre-containers,
+.detalhes-sobre-container{
+    display: flex;
+}
+
+.imagem-sobre{
+    border-radius: 2rem;
+}
+
+.arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+
+.detalhes-container{
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+}
+
+.section-container{
+    gap: 4rem;
+    height: 90%;
+}
+
+.section_pic-container{
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
 }
