@@ -265,6 +265,12 @@ section {
     position: relative;
 }
 
+#twitch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .sobre-container{
     gap: 2rem;    
     margin-bottom: 2rem;
