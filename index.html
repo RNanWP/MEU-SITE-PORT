@@ -230,21 +230,30 @@
         <h1 class="titulo">Área de Lazer</h1>
         <div class="detalhes-experiencia-container">
             <div class="sobre-container">
-                <iframe
-                    src="https://player.twitch.tv/?channel=rnanwp&parent=https://mydrinkretail.netlify.app"
-                    frameborder="0"
-                    allowfullscreen="true"
-                    scrolling="no"
-                    height="378"
-                    width="620">
+                
+
+                <script src= "https://player.twitch.tv/js/embed/v1.js"></script>
+                <div id="<player div ID>"></div>
+                <script type="text/javascript">
+                    var options = {
+                    width: 620,
+                    height: 378,
+                    channel: "rnanwp",
+                    video: "<video ID>",
+                    collection: "<collection ID>",
+                    // only needed if your site is also embedded on embed.example.com and othersite.example.com
+                    parent: ["embed.example.com", "othersite.example.com"]
+                };
+                var player = new Twitch.Player("<player div ID>", options);
+                player.setVolume(0.5);
+                </script>
+
+                <iframe id="twitch-chat-embed"
+                src="https://www.twitch.tv/embed/twitchdev/chat?parent=www.twitch.tv/rnanwp"
+                height="375"
+                width="350">
                 </iframe>
-    
-                <iframe
-                    id="chat_embed"
-                    src="https://www.twitch.tv/embed/rnanwp/chat?parent=https://mydrinkretail.netlify.app"
-                    height="375"
-                    width="350">
-                </iframe>
+
             </div>
         </div>
     </section>
