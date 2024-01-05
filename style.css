@@ -264,11 +264,19 @@ section {
 #sobre{
     position: relative;
 }
-
+/* SECTION twitch */
 #twitch {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
+    padding: 2rem; /* Adicionei um pouco de espaço ao redor do Twitch para melhorar a aparência */
+}
+
+iframe {
+    max-width: 100%;
+}
+
+#twitch-chat-embed {
+    max-width: 100%;
+    margin-top: 1rem; /* Adicionei um pouco de espaço acima do chat */
 }
 
 .sobre-container{
