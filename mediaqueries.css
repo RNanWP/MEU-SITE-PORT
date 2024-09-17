@@ -8,6 +8,14 @@
     }
 }
 
+@media (max-width: 768px) {
+    #twitch-video-embed {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
 @media screen and (min-width: 601px) and (max-width: 1200px) {
     #twitch {
         padding: 2rem;
@@ -73,7 +81,7 @@
 @media screen and (max-width: 600px) {
     #contato,
     footer {
-        height: 0vh;
+        height: auto;
     }
     #perfil {
         height: 83vh;
@@ -124,4 +132,3 @@
         text-align: justify;
     }
 }
-
