@@ -1,318 +1,499 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meu Portifólio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon"/>
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png" />
+  </head>
+  <body>
     <nav id="desktop-nav">
-        <div class="logo">Renan Oliveira</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#experiencia">Experiencia</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </div>
+      <div class="logo">Renan Oliveira</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#experiencia">Experiencia</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
     </nav>
     <nav id="hamburger-nav">
-        <div class="logo">Renan Oliveira</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#sobre" onclick="toggleMenu()">Sobre</a></li>
-                <li><a href="#experiencia" onclick="toggleMenu()">Experiencia</a></li>
-                <li><a href="#projetos" onclick="toggleMenu()">Projetos</a></li>
-                <li><a href="#contato" onclick="toggleMenu()">Contato</a></li>
-            </div>
+      <div class="logo">Renan Oliveira</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+        <div class="menu-links">
+          <li><a href="#sobre" onclick="toggleMenu()">Sobre</a></li>
+          <li><a href="#experiencia" onclick="toggleMenu()">Experiencia</a></li>
+          <li><a href="#projetos" onclick="toggleMenu()">Projetos</a></li>
+          <li><a href="#contato" onclick="toggleMenu()">Contato</a></li>
+        </div>
+      </div>
     </nav>
     <section id="perfil">
-        <div class="section_pic-container">
-            <img src="./assets/profile-pic.png" alt="Renan Foto">
+      <div class="section_pic-container">
+        <img src="./assets/profile-pic.png" alt="Renan Foto" />
+      </div>
+      <div class="section_text">
+        <p class="section_text_p1">Olá, eu sou</p>
+        <h1 class="titulo">Renan Oliveira</h1>
+        <p class="section_text_p2">Student: I.T Full Stack</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Profissional Currículo-com-LINK.pdf')"
+          >
+            Download CV
+          </button>
+
+          <button class="btn btn-color-1" onclick="location.href='./#contato'">
+            Contato Info
+          </button>
         </div>
-        <div class="section_text">
-            <p class="section_text_p1">Olá, eu sou</p>
-            <h1 class="titulo">Renan Oliveira</h1>
-            <p class="section_text_p2">Student: I.T Full Stack </p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/Profissional Currículo-com-LINK.pdf')">
-                 Download CV
-        
-                <button class="btn btn-color-1" onclick="location.href='./#contato'">
-                Contato Info
-                </button>
-            </div>
-            <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="Meu perfil do linkedin" class="icon" onclick="location.href='//www.linkedin.com/in/renanodev/'">
-                
-                <img src="./assets/github.png" alt="Meu perfil do github" class="icon" onclick="location.href='//WWW.github.com/RNanWP'">
-            </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="Meu perfil do linkedin"
+            class="icon"
+            onclick="location.href='//www.linkedin.com/in/renanodev/'"
+          />
+
+          <img
+            src="./assets/github.png"
+            alt="Meu perfil do github"
+            class="icon"
+            onclick="location.href='//WWW.github.com/RNanWP'"
+          />
         </div>
+      </div>
     </section>
     <section id="sobre">
-        <p class="section_text_p1">Conheça Mais</p>
-        <h1 class="titulo">Sobre Mim</h1>
-        <div class="section-container">
-            <div class="section_pic-container">
-                <img src="./assets/about-pic.png" alt="Imagem de perfil" class="imagem-sobre">
-            </div>
-            <div class="detalhes-sobre-container">
-                <div class="sobre-container">
-                    <div class="detalhes-container">
-                        <img src="./assets/experience.png" alt="Icone de experiencia" class="icon">
-                        <h3>Experiencia</h3>
-                        <p>Estudante em busca de um estágio... <br> Desenvolvimento FullStack </p>
-                    </div>
-                    <div class="detalhes-container">
-                        <img src="./assets/education.png" alt="Educação" class="icon">
-                        <h3>Educação</h3>
-                        <p>Analise e Desenvolvimento de Sistemas <br> </p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p>ATUALMENTE...<br>
-                        Tentando conseguir entrar em um estágio na área de
-                        programação, dev, infra...<br>
-
-                        Em constante desenvolvimento de minhas habilidades e crescimento profissional.</p>
-                </div>
-            </div>
+      <p class="section_text_p1">Conheça Mais</p>
+      <h1 class="titulo">Sobre Mim</h1>
+      <div class="section-container">
+        <div class="section_pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Imagem de perfil"
+            class="imagem-sobre"
+          />
         </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experiencia'">
+        <div class="detalhes-sobre-container">
+          <div class="sobre-container">
+            <div class="detalhes-container">
+              <img
+                src="./assets/experience.png"
+                alt="Icone de experiencia"
+                class="icon"
+              />
+              <h3>Experiencia</h3>
+              <p>
+                Estudante em busca de um estágio... <br />
+                Desenvolvimento FullStack
+              </p>
+            </div>
+            <div class="detalhes-container">
+              <img src="./assets/education.png" alt="Educação" class="icon" />
+              <h3>Educação</h3>
+              <p>Analise e Desenvolvimento de Sistemas <br /></p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              ATUALMENTE...<br />
+              Tentando conseguir entrar em um estágio na área de programação,
+              dev, infra...<br />
+
+              Em constante desenvolvimento de minhas habilidades e crescimento
+              profissional.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experiencia'"
+      />
     </section>
     <section id="experiencia">
-        <p class="section_text_p1">Explore Minha</p>
-        <h1 class="titulo">Experiência</h1>
-        <div class="sobre-container">
-            <!--Detalhes experiencia Front -->
-            <div class="detalhes-container">
-                <h2 class="experiencia-sub-titulo">Front Development</h2>
-                <div class="artigo-container">
-                    <article>
-                        <img src="./assets/checkmark.png" alt="Experiencia" class="icon">
-                        <div>
-                            <h3>HTML</h3>
-                            <p>Experiência</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="./assets/checkmark.png" alt="Experiencia" class="icon">
-                        <div>
-                            <h3>CSS</h3>
-                            <p>Intermediário</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="./assets/checkmark.png" alt="Experiencia" class="icon">
-                        <div>
-                            <h3>JavaScript</h3>
-                            <p>Básico</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="./assets/checkmark.png" alt="Experiencia" class="icon">
-                        <div>
-                            <h3>React</h3>
-                            <p>Básico</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-            <!--Detalhes experiencia Back-->
-            <div class="detalhes-container">
-                <h2 class="experiencia-sub-titulo">Back Development</h2>
-                <div class="artigo-container">
-                    <article>
-                        <img src="./assets/checkmark.png" alt="Experiencia" class="icon">
-                        <div>
-                            <h3>Git</h3>
-                            <p>Básico</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="./assets/checkmark.png" alt="Experiencia" class="icon">
-                        <div>
-                            <h3>Java</h3>
-                            <p>Básico</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="./assets/checkmark.png" alt="Experiencia" class="icon">
-                        <div>
-                            <h3>MySql</h3>
-                            <p>Básico</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="./assets/checkmark.png" alt="Experiencia" class="icon">
-                        <div>
-                            <h3>Node JS</h3>
-                            <p>Básico</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-            <!--Detalhes experiencia A aprender-->
-            <div class="detalhes-container">
-                <h2 class="experiencia-sub-titulo">Aprendendo</h2>
-                <div class="artigo-container">
-                    <article>
-                        <img src="./assets/checkmark.png" alt="Experiencia" class="icon">
-                        <div>
-                            <h3>TypeScript</h3>
-                            <p>Aprendendo</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="./assets/checkmark.png" alt="Experiencia" class="icon">
-                        <div>
-                            <h3>Python</h3>
-                            <p>Aprendendo</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="./assets/checkmark.png" alt="Experiencia" class="icon">
-                        <div>
-                            <h3>Next.JS</h3>
-                            <p>Aprendendo</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
+      <p class="section_text_p1">Explore Minha</p>
+      <h1 class="titulo">Experiência</h1>
+      <div class="sobre-container">
+        <!--Detalhes experiencia Front -->
+        <div class="detalhes-container">
+          <h2 class="experiencia-sub-titulo">Front Development</h2>
+          <div class="artigo-container">
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experiencia"
+                class="icon"
+              />
+              <div>
+                <h3>HTML</h3>
+                <p>Experiência</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experiencia"
+                class="icon"
+              />
+              <div>
+                <h3>CSS</h3>
+                <p>Intermediário</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experiencia"
+                class="icon"
+              />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Básico</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experiencia"
+                class="icon"
+              />
+              <div>
+                <h3>React</h3>
+                <p>Básico</p>
+              </div>
+            </article>
+          </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projetos'">
+        <!--Detalhes experiencia Back-->
+        <div class="detalhes-container">
+          <h2 class="experiencia-sub-titulo">Back Development</h2>
+          <div class="artigo-container">
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experiencia"
+                class="icon"
+              />
+              <div>
+                <h3>Git</h3>
+                <p>Básico</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experiencia"
+                class="icon"
+              />
+              <div>
+                <h3>Java</h3>
+                <p>Básico</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experiencia"
+                class="icon"
+              />
+              <div>
+                <h3>MySql</h3>
+                <p>Básico</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experiencia"
+                class="icon"
+              />
+              <div>
+                <h3>Node JS</h3>
+                <p>Básico</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <!--Detalhes experiencia A aprender-->
+        <div class="detalhes-container">
+          <h2 class="experiencia-sub-titulo">Aprendendo</h2>
+          <div class="artigo-container">
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experiencia"
+                class="icon"
+              />
+              <div>
+                <h3>TypeScript</h3>
+                <p>Aprendendo</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experiencia"
+                class="icon"
+              />
+              <div>
+                <h3>Python</h3>
+                <p>Aprendendo</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experiencia"
+                class="icon"
+              />
+              <div>
+                <h3>Next.JS</h3>
+                <p>Aprendendo</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projetos'"
+      />
     </section>
     <section id="projetos">
-        <p class="section_text_p1">Meus Sites Recentes</p>
-        <h1 class="titulo">Projetos</h1>
-        <div class="detalhes-experiencia-container">
-            <div class="sobre-container">
-            <!--Projeto 1-->
-            <div class="detalhes-container color-container">
-                <div class="artigo-container">
-                    <img src="./assets/project-1.png" alt="Projeto 1" class="projeto-img">
-                </div>
-                <h2 class="experiencia-sub-titulo titulo-projeto">Primeiro Projeto</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 projeto-btn" onclick="location.href='https://github.com/RNanWP/portifolio-2'">Github</button>
-                    <button class="btn btn-color-2 projeto-btn" onclick="location.href='https://rnanwp-meu-site.netlify.app'">Demonstração</button>
-                </div>
+      <p class="section_text_p1">Meus Sites Recentes</p>
+      <h1 class="titulo">Projetos</h1>
+      <div class="detalhes-experiencia-container">
+        <div class="sobre-container">
+          <!--Projeto 1-->
+          <div class="detalhes-container color-container">
+            <div class="artigo-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Projeto 1"
+                class="projeto-img"
+              />
             </div>
-            <!--Projeto 2-->
-            <div class="detalhes-container color-container">
-                <div class="artigo-container">
-                    <img src="./assets/project-2.png" alt="Projeto 2" class="projeto-img">
-                </div>
-                <h2 class="experiencia-sub-titulo titulo-projeto">Segundo Projeto</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 projeto-btn" onclick="location.href='https://github.com/RNanWP/Empresa-Needis.git'">Github</button>
-                    <button class="btn btn-color-2 projeto-btn" onclick="location.href='https://pharmacy-needis.netlify.app'">Demonstração</button>
-                </div>
+            <h2 class="experiencia-sub-titulo titulo-projeto">
+              Primeiro Projeto
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 projeto-btn"
+                onclick="location.href='https://github.com/RNanWP/portifolio-2'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 projeto-btn"
+                onclick="location.href='https://rnanwp-meu-site.netlify.app'"
+              >
+                Demonstração
+              </button>
             </div>
-            <!--Projeto 3-->
-            <div class="detalhes-container color-container">
-                <div class="artigo-container">
-                    <img src="./assets/project-3.png" alt="Projeto 3" class="projeto-img">
-                </div>
-                <h2 class="experiencia-sub-titulo titulo-projeto">Terceiro Projeto</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 projeto-btn" onclick="location.href='https://github.com/RNanWP/portifolio1-23'">Github</button>
-                    <button class="btn btn-color-2 projeto-btn" onclick="location.href='https://portifolio1-23.netlify.app/'">Demonstração</button>
-                </div>
+          </div>
+          <!--Projeto 2-->
+          <div class="detalhes-container color-container">
+            <div class="artigo-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Projeto 2"
+                class="projeto-img"
+              />
             </div>
-            <!--Projeto 4-->
-            <div class="detalhes-container color-container">
-                <div class="artigo-container">
-                    <img src="./assets/project-8.png" alt="Projeto 4" class="projeto-img">
-                </div>
-                <h2 class="experiencia-sub-titulo titulo-projeto">Quarto Projeto</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 projeto-btn" onclick="location.href='https://github.com/RNanWP/MyDrink'">Github</button>
-                    <button class="btn btn-color-2 projeto-btn" onclick="location.href='https://mydrinkretail.netlify.app'">Demonstração</button>
-                </div>
+            <h2 class="experiencia-sub-titulo titulo-projeto">
+              Segundo Projeto
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 projeto-btn"
+                onclick="location.href='https://github.com/RNanWP/Empresa-Needis.git'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 projeto-btn"
+                onclick="location.href='https://pharmacy-needis.netlify.app'"
+              >
+                Demonstração
+              </button>
             </div>
-            <!--Projeto 5-->
-            <div class="detalhes-container color-container projeto-destaque">
-                <div class="artigo-container">
-                    <img src="./assets/project-5.png" alt="Projeto 4" class="projeto-img">
-                </div>
-                <h2 class="experiencia-sub-titulo titulo-projeto">Quinto Projeto</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 projeto-btn" onclick="location.href='https://github.com/RNanWP/FullStack-IA.Story-Uni9.git'">Github</button>
-                    <button class="btn btn-color-2 projeto-btn" onclick="location.href='https://storytalesrn.netlify.app/'">Demonstração</button>
-                </div>
+          </div>
+          <!--Projeto 3-->
+          <div class="detalhes-container color-container">
+            <div class="artigo-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Projeto 3"
+                class="projeto-img"
+              />
             </div>
-        
-
+            <h2 class="experiencia-sub-titulo titulo-projeto">
+              Terceiro Projeto
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 projeto-btn"
+                onclick="location.href='https://github.com/RNanWP/portifolio1-23'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 projeto-btn"
+                onclick="location.href='https://portifolio1-23.netlify.app/'"
+              >
+                Demonstração
+              </button>
             </div>
+          </div>
+          <!--Projeto 4-->
+          <div class="detalhes-container color-container">
+            <div class="artigo-container">
+              <img
+                src="./assets/project-8.png"
+                alt="Projeto 4"
+                class="projeto-img"
+              />
+            </div>
+            <h2 class="experiencia-sub-titulo titulo-projeto">
+              Quarto Projeto
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 projeto-btn"
+                onclick="location.href='https://github.com/RNanWP/MyDrink'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 projeto-btn"
+                onclick="location.href='https://mydrinkretail.netlify.app'"
+              >
+                Demonstração
+              </button>
+            </div>
+          </div>
+          <!--Projeto 5-->
+          <div class="detalhes-container color-container projeto-destaque">
+            <div class="artigo-container">
+              <img
+                src="./assets/project-5.png"
+                alt="Projeto 4"
+                class="projeto-img"
+              />
+            </div>
+            <h2 class="experiencia-sub-titulo titulo-projeto">
+              Quinto Projeto
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 projeto-btn"
+                onclick="location.href='https://github.com/RNanWP/FullStack-IA.Story-Uni9.git'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 projeto-btn"
+                onclick="location.href='https://storytalesrn.netlify.app/'"
+              >
+                Demonstração
+              </button>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#twitch'">
-        
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#twitch'"
+      />
     </section>
 
     <section id="twitch">
-        <p class="section_text_p1">Minha live twitch</p>
-        <h1 class="titulo">Área de Lazer</h1>
-            <div class="sobre-container">
-                
-                <iframe
-                id="twitch-video-embed"
-                src="https://player.twitch.tv/?channel=rnanwp&parent=rnanwp-meu-site.netlify.app"
-                frameborder="0"
-                allowfullscreen="true"
-                scrolling="no"
-                height="720"
-                width="1280"
-                allowfullscreen>
-                </iframe>
-            </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contato'">
+      <p class="section_text_p1">Minha live twitch</p>
+      <h1 class="titulo">Área de Lazer</h1>
+      <div class="sobre-container">
+        <iframe
+          id="twitch-video-embed"
+          src="https://player.twitch.tv/?channel=rnanwp&parent=rnanwp-meu-site.netlify.app"
+          frameborder="0"
+          allowfullscreen="true"
+          scrolling="no"
+          height="720"
+          width="1280"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contato'"
+      />
     </section>
-    
+
     <section id="contato">
-        <p class="section_text_p1">Entrar em Contato</p>
-        <h1 class="titulo">Contate-me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
-                <p><a href="mailto:renan92011@hotmail.com">Email</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img src="./assets/linkedin.png" alt="Linkedin icon" class="icon contact-icon">
-                <p><a href="https://www.linkedin.com/in/renanodev/">LinkedIn</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img src="./assets/github.png" alt="Meu perfil do github" class="icon contact-icon github-icon">
-                <p><a href="https://github.com/RNanWP">Github</a></p>
-            </div>
+      <p class="section_text_p1">Entrar em Contato</p>
+      <h1 class="titulo">Contate-me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:renan92011@hotmail.com">Email</a></p>
         </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="Linkedin icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/renanodev/">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/github.png"
+            alt="Meu perfil do github"
+            class="icon contact-icon github-icon"
+          />
+          <p><a href="https://github.com/RNanWP">Github</a></p>
+        </div>
+      </div>
     </section>
     <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#experiencia">Experiencia</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </div>
-        </nav>
-        <p>Copyright &#169; 2023 Renan Oliveira. All Rights Reserved.</p>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Renan Oliveira. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
