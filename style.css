@@ -323,11 +323,11 @@ section {
   text-align: center;
 }
 
-/* .detalhes-container:hover{
+.detalhes-container:hover{
     background: #f9f9f9; 
     transform: scale(1.02);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-} */
+}
 
 .section-container {
   gap: 4rem;
