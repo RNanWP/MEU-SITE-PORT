@@ -157,6 +157,7 @@ section {
 
 .section-container {
   display: flex;
+  justify-content: center;
 }
 
 /* SESSÃO PERFIL */
