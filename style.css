@@ -269,7 +269,7 @@ section {
   position: relative;
 }
 /* SECTION twitch */
-#twitch {
+#lazer {
   display: flex;
   flex-direction: column;
   align-items: center;
