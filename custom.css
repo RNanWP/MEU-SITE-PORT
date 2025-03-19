@@ -13,3 +13,21 @@
    font-size: 20px;
    font-family: 'Poppins',sans-serif;
  }
+
+ .logos{
+   padding-top: 30px;
+ }
+
+ .img-shine{
+   background-repeat: no-repeat;
+   object-fit: cover;
+   background-size: cover;
+   overflow: hidden;
+   position: relative;
+ }
+
+ .img-shine .img1{
+   background-image:url('./assets/favicon3.png');
+   width: 300px;
+   height: 105px;
+ }
