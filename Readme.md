@@ -2,7 +2,7 @@
 
 <p align="center">
 <!-- ![Imagem do projeto ](assets/favicon3.png) -->
-<img src="./assets/favicon3.png" alt="Logo do StoryTales AI" width="300">
+<img src="./assets/favicon3.png" alt="Logo do Portifólio" width="300">
 </p>
 
 Este é um projeto de portfólio desenvolvido com tecnologias modernas como HTML, CSS, JavaScript, com o objetivo de mostrar minhas habilidades de desenvolvimento web e os projetos que venho criando. O site contém várias seções, incluindo um perfil pessoal, informações sobre minha experiência, projetos recentes e um formulário de contato.
