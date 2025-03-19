@@ -1,4 +1,4 @@
-<h1 align="center"> Meu Portfólio </h1>
+<h1 align="center"> Meu Portfólio®</h1>
 
 <p align="center">
 <!-- ![Imagem do projeto ](assets/favicon3.png) -->
@@ -31,7 +31,7 @@ Este é um projeto de portfólio desenvolvido com tecnologias modernas como HTML
 
 # Navegue até o diretório do projeto:
 
-   cd nome-do-diretorio
+   cd MEU-SITE-PORT
 
 
 # Instale as dependências:
