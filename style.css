@@ -10,7 +10,8 @@
 body {
   font-family: "Poppins", sans-serif;
   /* background: linear-gradient(135deg, #ffffff, #f7f7f7); */
-  background: #ffffff url('https://www.transparenttextures.com/patterns/xv.png') repeat;
+  background: #ffffff url("https://www.transparenttextures.com/patterns/xv.png")
+    repeat;
 }
 
 html {
@@ -168,6 +169,7 @@ section {
   display: flex;
   justify-content: center;
   gap: 5rem;
+  align-items: center;
   height: 80vh;
 }
 
@@ -311,6 +313,7 @@ section {
   position: absolute;
   right: -5rem;
   bottom: 2.5rem;
+  z-index: 10;
 }
 
 .detalhes-container {
@@ -323,10 +326,10 @@ section {
   text-align: center;
 }
 
-.detalhes-container:hover{
-    background: #f9f9f9; 
-    transform: scale(1.02);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+.detalhes-container:hover {
+  background: #f9f9f9;
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .section-container {
